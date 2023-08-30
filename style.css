@@ -1,0 +1,24 @@
+*, *::after, *:default{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: clamp(15%, 80px, 50%) 1fr;
+}
+
+header{
+    background-color: aqua;
+}
+
+.sidebar{
+    background-color: burlywood;
+}
+
+.main{
+    background-color: yellow;
+}
