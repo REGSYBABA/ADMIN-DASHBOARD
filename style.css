@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 280px 1fr;
-  grid-template-rows: clamp(15%, 80px, 50%) 1fr;
+  grid-template-rows: clamp(13%, 50px, 20%) 1fr;
   grid-template-areas: "sidebar header" "sidebar main";
 }
 
@@ -29,30 +29,39 @@ header {
   gap: 20px;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "projects advertising" "projects announcements" "projects trending";
+  grid-template-rows: min-content 1fr;
 }
-.main .card-holder {
-  grid-area: projects;
+.main .projects {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.main .projects .balls {
+  margin-bottom: 20px;
+}
+.main .projects .projects-card-holder {
+  background-color: aqua;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 210px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
-.main .card-holder .card {
-  background-color: red;
+.main .projects .projects-card-holder .card {
+  background-color: yellow;
+  gap: 20px;
+  padding: 25px;
 }
-.main .main-right-side-bar {
-  grid-area: announcements;
+.main .mini-card-holder {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  gap: 20px;
 }
-.main .main-right-side-bar .side-bar {
-  background-color: red;
-  padding: 20px;
+.main .mini-card-holder .top {
+  background-color: rebeccapurple;
+  padding: 15px;
+  width: 250px;
 }
-.main .main-below-side-bar {
-  grid-area: advertising;
-}
-.main .main-below-side-bar .side-card1 {
+.main .mini-card-holder .bottom {
   background-color: aqua;
-  padding: 20px;
-  margin-top: 20;
+  padding: 15px;
+  width: 250px;
 }/*# sourceMappingURL=style.css.map */
