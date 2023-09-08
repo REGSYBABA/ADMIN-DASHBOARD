@@ -26,3 +26,9 @@ arrow.addEventListener("click", () => {
     sidebar.classList.toggle('close')
     console.log('balls')
 })
+
+
+searchBtn.addEventListener("click", () => {
+    sidebar.classList.remove('close')
+    console.log('balls')
+})
