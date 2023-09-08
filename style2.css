@@ -222,6 +222,44 @@ body.dark .sidebar .menu-bar .mode .toggle-switch .switch::before {
   background-color: var(--header-color);
   padding: 20px;
 }
+.main .upper .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.main .upper .top .left-search-area {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 20px;
+  margin-left: 3rem;
+}
+.main .upper .top .left-search-area input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  min-width: 40vw;
+  height: 30px;
+}
+.main .upper .top .right-search-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-right: 3rem;
+}
+.main .upper .top .right-search-area button {
+  background-color: var(--header-color);
+  border: none;
+}
+.main .upper .top .right-search-area .avatar {
+  width: 55px;
+  height: 55px;
+}
+.main .upper .upper-bottom {
+  display: flex;
+}
 .main .lower {
   grid-area: lower;
   background-color: var(--main-color);
